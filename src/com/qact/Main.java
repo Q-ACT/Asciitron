@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -98,7 +97,7 @@ public class Main {
     public static String pixelToAscii(float[] pixels){
         String asciiImage = "";
         for(int i = 0; i < pixels.length; i++){
-            asciiImage = asciiImage.concat(" " + luminanceScale.charAt((int) (pixels[i] / 255f * (luminanceScale.length()-1))) + " ");
+            asciiImage = asciiImage.concat(luminanceScale.charAt((int) (pixels[i] / 255f * (luminanceScale.length()-1))) + " ");
             if(i%imgWidth+1 == imgWidth){
                 asciiImage = asciiImage.concat("\n");
             }

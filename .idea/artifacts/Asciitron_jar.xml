@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Asciitron:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Asciitron_jar</output-path>
+    <root id="archive" name="Asciitron.jar">
+      <element id="module-output" name="Asciitron" />
+    </root>
+  </artifact>
+</component>
